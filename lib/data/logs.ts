@@ -17,7 +17,7 @@ export async function createLog(
   type: "success" | "error",
   postType: LogPostType,
   message: string,
-  endpointId: string
+  endpointId: string,
 ): Promise<void> {
   await db.insert(logs).values({
     type,
@@ -56,7 +56,7 @@ export const getLogs = authenticatedAction.action(
     }));
 
     return data;
-  }
+  },
 );
 
 /**

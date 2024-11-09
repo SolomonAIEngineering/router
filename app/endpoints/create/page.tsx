@@ -1,3 +1,6 @@
+import CreateForm from "@/components/groups/endpoints/create-form";
+import { Header } from "@/components/parts/header";
+import { PageWrapper } from "@/components/parts/page-wrapper";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,12 +9,9 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Header } from "@/components/parts/header";
-import CreateForm from "@/components/groups/endpoints/create-form";
-import { Home } from "lucide-react";
-import { PageWrapper } from "@/components/parts/page-wrapper";
-import Image from "next/image";
 import Icon from "@/public/icon.svg";
+import { Home } from "lucide-react";
+import Image from "next/image";
 
 const pageData = {
   name: "New Endpoint",
@@ -45,7 +45,7 @@ export default async function Page() {
           src={Icon}
           width={24}
           height={24}
-          alt="Router.so Icon"
+          alt="Trident Icon"
         />
       </Breadcrumb>
       <PageWrapper>

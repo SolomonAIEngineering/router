@@ -1,16 +1,16 @@
 import {
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
 
 import { Progress } from "@/components/ui/progress";
-import { CircleAlert, ArrowUp } from "lucide-react";
-import { Badge } from "../ui/badge";
+import { ArrowUp, CircleAlert } from "lucide-react";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 export const Usage = ({
   totalUsage,
@@ -80,7 +80,7 @@ export const Usage = ({
 const UpgradePlan = () => {
   return (
     <a
-      href="https://router.so/upgrade"
+      href="https://trident.solomon-ai.app/upgrade"
       target="_blank"
       rel="noopener noreferrer"
       className="p-4 hover:pl-5 hover:pr-3 transition-all h-full w-full border grid gap-1 border-green-500 rounded-sm bg-green-500/15 hover:bg-green-500/25"

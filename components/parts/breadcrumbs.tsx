@@ -10,7 +10,10 @@ import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
 import Icon from "@/public/icon.svg";
 
-export const Breadcrumbs = ({ pageName, isLoading }: { pageName?: string, isLoading?: boolean }) => {
+export const Breadcrumbs = ({
+  pageName,
+  isLoading,
+}: { pageName?: string; isLoading?: boolean }) => {
   return (
     <Breadcrumb className="h-[67.63px] bg-muted/50 rounded-lg border flex items-center justify-between p-6">
       <BreadcrumbList>
@@ -31,7 +34,7 @@ export const Breadcrumbs = ({ pageName, isLoading }: { pageName?: string, isLoad
         src={Icon}
         width={24}
         height={24}
-        alt="Router.so Icon"
+        alt="Trident Icon"
       />
     </Breadcrumb>
   );

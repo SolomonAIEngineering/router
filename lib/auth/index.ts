@@ -1,10 +1,9 @@
-import NextAuth from "next-auth";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
-import { db } from "../db";
 import type { NextAuthConfig } from "next-auth";
-import { User } from "next-auth";
-import Resend from "next-auth/providers/resend";
+import NextAuth, { User } from "next-auth";
 import GitHub from "next-auth/providers/github";
+import Resend from "next-auth/providers/resend";
+import { db } from "../db";
 
 declare module "next-auth" {
   interface Session extends User {
@@ -22,7 +21,7 @@ export const config = {
   providers: [
     Resend({
       apiKey: process.env.RESEND_API_KEY!,
-      from: "info@router.so",
+      from: "team@inbox.solomon-ai.app",
       // sendVerificationRequest, -> TODO: send custom email
     }),
     GitHub, // optional GitHub provider

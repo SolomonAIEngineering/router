@@ -1,10 +1,12 @@
+import { Header } from "@/components/parts/header";
+import { PageWrapper } from "@/components/parts/page-wrapper";
 import {
   Breadcrumb,
-  BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbSeparator,
+  BreadcrumbList,
   BreadcrumbPage,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import {
   Table,
@@ -14,12 +16,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Home } from "lucide-react";
-import Icon from "@/public/icon.svg";
-import Image from "next/image";
-import { Header } from "@/components/parts/header";
-import { PageWrapper } from "@/components/parts/page-wrapper";
 import { getLeadData } from "@/lib/data/leads";
+import Icon from "@/public/icon.svg";
+import { Home } from "lucide-react";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 const pageData = {
@@ -89,7 +89,7 @@ function Breadcrumbs({ leadId }: { leadId: string }) {
         src={Icon}
         width={24}
         height={24}
-        alt="Router.so Icon"
+        alt="Trident Icon"
       />
     </Breadcrumb>
   );

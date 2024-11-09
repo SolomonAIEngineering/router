@@ -1,12 +1,11 @@
 "use client";
 
-import { Endpoint } from "@/lib/db";
-import { ColumnDef } from "@tanstack/react-table";
 import { DataTableColumnHeader } from "@/components/data-table/header";
 import { Badge } from "@/components/ui/badge";
-import { File } from "lucide-react";
-import { Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Endpoint } from "@/lib/db";
+import { ColumnDef } from "@tanstack/react-table";
+import { Eye, File } from "lucide-react";
 import { toast } from "sonner";
 
 import Link from "next/link";
@@ -57,12 +56,12 @@ export const columns: ColumnDef<Endpoint>[] = [
           size="sm"
           onClick={() => {
             navigator.clipboard.writeText(
-              `https://app.router.so/api/endpoints/${id}`
+              `https://trident.solomon-ai.app/api/endpoints/${id}`,
             );
             toast.success("Endpoint Copied");
           }}
         >
-          {`https://app.router.so/api/endpoints/${id}`}
+          {`https://trident.solomon-ai.app/api/endpoints/${id}`}
         </Button>
       );
     },

@@ -21,8 +21,8 @@ export const incrementLeadCount = async (endpointId: string) => {
           .select({ userId: endpoints.userId })
           .from(endpoints)
           .where(eq(endpoints.id, endpointId))
-          .limit(1)
-      )
+          .limit(1),
+      ),
     );
 };
 
@@ -74,5 +74,5 @@ export const getUsageForUser = authenticatedAction.action(
     }
 
     return result[0].leadCount;
-  }
+  },
 );

@@ -1,5 +1,5 @@
 {
-  "name": "router",
+  "name": "@apps/platform-lead",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,10 +7,12 @@
     "docker-dev": "tsx lib/db/migrate.ts &&next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "test:unit": "vitest",
     "db:generate": "drizzle-kit generate:pg",
-    "db:migrate": "tsx lib/db/migrate.ts"
+    "db:migrate": "tsx lib/db/migrate.ts",
+    "generate": "drizzle-kit generate",
+    "lint": "biome lint",
+    "format": "biome format --write ."
   },
   "dependencies": {
     "@auth/core": "^0.34.2",

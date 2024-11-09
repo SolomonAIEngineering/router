@@ -7,7 +7,7 @@ import { toast } from "sonner";
  * @returns A client action function that handles the form data and displays a success or error toast message.
  */
 export function createClientAction(
-  createParamWithId: ServerActionFunction
+  createParamWithId: ServerActionFunction,
 ): (formData: FormData) => Promise<void> {
   return async function clientAction(formData: FormData) {
     const result = await createParamWithId(formData);

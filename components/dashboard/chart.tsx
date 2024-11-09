@@ -47,7 +47,7 @@ export function Chart({
       leads: chartData.reduce((acc, curr) => acc + curr.leads, 0),
       errors: chartData.reduce((acc, curr) => acc + curr.errors, 0),
     }),
-    [chartData]
+    [chartData],
   );
 
   return (

@@ -1,14 +1,14 @@
 // Component Imports
-import AccountWidget from "../auth/widget";
-import Link from "next/link";
-import Image from "next/image";
 import { ModeToggle } from "@/components/parts/mode-toggle";
+import Image from "next/image";
+import Link from "next/link";
+import AccountWidget from "../auth/widget";
 
 // Image Imports
 import Logo from "@/public/logo.svg";
 
 // Icon Imports
-import { BarChart, Contact, Layers, LifeBuoy, Disc3, Book } from "lucide-react";
+import { BarChart, Book, Contact, Disc3, Layers, LifeBuoy } from "lucide-react";
 
 const links = [
   { href: "/", text: "Dashboard", icon: BarChart },
@@ -18,7 +18,11 @@ const links = [
 ];
 
 const otherLinks = [
-  { href: "https://router.so/docs", text: "Documentation", icon: Book },
+  {
+    href: "https://engineering-docs.solomon-ai.app",
+    text: "Documentation",
+    icon: Book,
+  },
   { href: "/support", text: "Support", icon: LifeBuoy },
 ];
 
@@ -34,7 +38,7 @@ export default function Nav() {
           src={Logo}
           width={100}
           height={18.53}
-          alt="Router.so Wordmark"
+          alt="Trident Wordmark"
         />
       </Link>
       <div className="border bg-muted/50 rounded-lg flex flex-col justify-between p-6 h-full">
@@ -58,7 +62,7 @@ export default function Nav() {
             <div className="flex justify-between items-center gap-2">
               <ModeToggle />
               <p className="text-xs text-muted-foreground opacity-50">
-                © router.so, 2024
+                © Solomon AI, 2024
               </p>
             </div>
           </div>

@@ -14,8 +14,12 @@ export default function MagicLinkEmail({
       <p className="my-4 opacity-50">
         If you didn&apos;t try to login, you can safely ignore this email.
       </p>
-      <a href="https://router.so" target="_blank" className="underline">
-        router.so
+      <a
+        href="https://trident.solomon-ai.app"
+        target="_blank"
+        className="underline"
+      >
+        Trident
       </a>
     </>
   );

@@ -1,16 +1,16 @@
+import Nav from "@/components/parts/nav";
+import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/providers/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/parts/nav";
-import { ThemeProvider } from "@/providers/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
 
 const space = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Router.so | The world's simplest lead router",
+  title: "Trident | Lead Management For Small Businesses",
   description:
-    "Router.so is the world's simplest lead router. Built for developers, by developers.",
+    "Trident is the lead management platform for small businesses operating in cyclical industries.",
 };
 
 export default function RootLayout({

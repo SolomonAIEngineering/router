@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { redirect } from "next/navigation";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import Balancer from "react-wrap-balancer";
 
 export default async function LoginPage() {
@@ -26,12 +26,18 @@ export default async function LoginPage() {
       </div>
 
       <p className="mt-4 max-w-xs text-center text-sm opacity-60 md:mb-24">
-        By using router.so, you agree to our{" "}
-        <Link className="underline underline-offset-4" href="/">
+        By using Trident, you agree to our{" "}
+        <Link
+          className="underline underline-offset-4"
+          href="https://solomon-ai.app/terms"
+        >
           Privacy Policy
         </Link>{" "}
         and{" "}
-        <Link className="underline underline-offset-4" href="/">
+        <Link
+          className="underline underline-offset-4"
+          href="https://solomon-ai.app/privacy"
+        >
           Terms of Service
         </Link>
         .

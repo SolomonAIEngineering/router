@@ -51,7 +51,7 @@ export const validations: { [key in ValidationType]: z.ZodType<any, any> } = {
  */
 export const convertToCorrectTypes = (
   data: any,
-  schema: GeneralSchema[]
+  schema: GeneralSchema[],
 ): any => {
   const result: any = {};
 
@@ -79,7 +79,7 @@ export const convertToCorrectTypes = (
  * @returns A ZodRawShape object representing the generated dynamic schema.
  */
 export const generateDynamicSchema = (
-  schema: GeneralSchema[]
+  schema: GeneralSchema[],
 ): z.ZodRawShape => {
   return schema.reduce<z.ZodRawShape>((acc, { key, value }) => {
     const validation = validations[value];
@@ -99,7 +99,7 @@ export const generateDynamicSchema = (
  */
 export const validateAndParseData = (
   dynamicSchema: z.ZodRawShape,
-  data: any
+  data: any,
 ): z.SafeParseReturnType<
   {
     [x: string]: any;

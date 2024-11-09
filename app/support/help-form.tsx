@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useSession, SessionProvider } from "next-auth/react";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -48,7 +48,7 @@ function HelpFormContent() {
 
   useEffect(() => {
     if (session?.user?.email) {
-      form.setValue('email', session.user.email);
+      form.setValue("email", session.user.email);
     }
   }, [session, form]);
 

@@ -12,7 +12,7 @@ const ValidationType = z.enum(
   ["phone", "email", "string", "number", "date", "boolean", "url", "zip_code"],
   {
     errorMap: () => ({ message: "Please select a valid field type." }),
-  }
+  },
 );
 
 export const createEndpointFormSchema = z.object({
@@ -21,7 +21,7 @@ export const createEndpointFormSchema = z.object({
     z.object({
       key: z.string().min(1, { message: "Please enter a valid field name." }),
       value: ValidationType,
-    })
+    }),
   ),
   formEnabled: z.boolean(),
   successUrl: z.string().url().optional(),
@@ -37,7 +37,7 @@ export const updateEndpointFormSchema = z.object({
     z.object({
       key: z.string().min(1, { message: "Please enter a valid field name." }),
       value: ValidationType,
-    })
+    }),
   ),
   formEnabled: z.boolean(),
   successUrl: z.string().url().optional(),

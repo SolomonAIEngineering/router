@@ -1,5 +1,5 @@
-import { resend } from "@/lib/utils/resend";
 import MagicLinkEmail from "@/components/email/magic-link-email";
+import { resend } from "@/lib/utils/resend";
 
 export async function sendVerificationRequest(params: {
   identifier: string;
@@ -12,7 +12,7 @@ export async function sendVerificationRequest(params: {
 
   try {
     const data = await resend.emails.send({
-      from: "info@router.so",
+      from: "team@inbox.solomon-ai.app",
       to: [identifier],
       subject: `Log in to ${host}`,
       text: text({ url, host }),

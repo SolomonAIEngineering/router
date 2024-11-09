@@ -78,13 +78,9 @@
         "account_userId_user_id_fk": {
           "name": "account_userId_user_id_fk",
           "tableFrom": "account",
-          "columnsFrom": [
-            "userId"
-          ],
+          "columnsFrom": ["userId"],
           "tableTo": "user",
-          "columnsTo": [
-            "id"
-          ],
+          "columnsTo": ["id"],
           "onUpdate": "no action",
           "onDelete": "cascade"
         }
@@ -92,10 +88,7 @@
       "compositePrimaryKeys": {
         "account_provider_providerAccountId_pk": {
           "name": "account_provider_providerAccountId_pk",
-          "columns": [
-            "provider",
-            "providerAccountId"
-          ]
+          "columns": ["provider", "providerAccountId"]
         }
       },
       "uniqueConstraints": {}
@@ -198,13 +191,9 @@
         "endpoint_userId_user_id_fk": {
           "name": "endpoint_userId_user_id_fk",
           "tableFrom": "endpoint",
-          "columnsFrom": [
-            "userId"
-          ],
+          "columnsFrom": ["userId"],
           "tableTo": "user",
-          "columnsTo": [
-            "id"
-          ],
+          "columnsTo": ["id"],
           "onUpdate": "no action",
           "onDelete": "cascade"
         }
@@ -252,13 +241,9 @@
         "lead_endpointId_endpoint_id_fk": {
           "name": "lead_endpointId_endpoint_id_fk",
           "tableFrom": "lead",
-          "columnsFrom": [
-            "endpointId"
-          ],
+          "columnsFrom": ["endpointId"],
           "tableTo": "endpoint",
-          "columnsTo": [
-            "id"
-          ],
+          "columnsTo": ["id"],
           "onUpdate": "no action",
           "onDelete": "cascade"
         }
@@ -312,13 +297,9 @@
         "log_endpointId_endpoint_id_fk": {
           "name": "log_endpointId_endpoint_id_fk",
           "tableFrom": "log",
-          "columnsFrom": [
-            "endpointId"
-          ],
+          "columnsFrom": ["endpointId"],
           "tableTo": "endpoint",
-          "columnsTo": [
-            "id"
-          ],
+          "columnsTo": ["id"],
           "onUpdate": "no action",
           "onDelete": "cascade"
         }
@@ -354,13 +335,9 @@
         "session_userId_user_id_fk": {
           "name": "session_userId_user_id_fk",
           "tableFrom": "session",
-          "columnsFrom": [
-            "userId"
-          ],
+          "columnsFrom": ["userId"],
           "tableTo": "user",
-          "columnsTo": [
-            "id"
-          ],
+          "columnsTo": ["id"],
           "onUpdate": "no action",
           "onDelete": "cascade"
         }
@@ -436,10 +413,7 @@
       "compositePrimaryKeys": {
         "verificationToken_identifier_token_pk": {
           "name": "verificationToken_identifier_token_pk",
-          "columns": [
-            "identifier",
-            "token"
-          ]
+          "columns": ["identifier", "token"]
         }
       },
       "uniqueConstraints": {}
@@ -449,18 +423,12 @@
     "public.logPostType": {
       "name": "logPostType",
       "schema": "public",
-      "values": [
-        "http",
-        "form"
-      ]
+      "values": ["http", "form"]
     },
     "public.logType": {
       "name": "logType",
       "schema": "public",
-      "values": [
-        "success",
-        "error"
-      ]
+      "values": ["success", "error"]
     }
   },
   "schemas": {},

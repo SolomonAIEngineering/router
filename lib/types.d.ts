@@ -116,7 +116,7 @@ type LogMessage =
  * @returns A promise that resolves to an object containing an error message, or undefined if there is no error.
  */
 type ServerActionFunction = (
-  formData: FormData
+  formData: FormData,
 ) => Promise<{ error: string } | undefined>;
 
 type LogPostType = "http" | "form" | "webhook" | "email";

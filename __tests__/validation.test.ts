@@ -228,7 +228,7 @@ describe("validateAndParseData", () => {
 
     const result = validation.validateAndParseData(
       dynamicSchema,
-      incompleteData
+      incompleteData,
     );
 
     expect(result.success).toBe(false);
@@ -248,7 +248,7 @@ describe("validateAndParseData", () => {
 
     const result = validation.validateAndParseData(
       dynamicSchema,
-      dataWithExtraFields
+      dataWithExtraFields,
     );
 
     expect(result.success).toBe(true);

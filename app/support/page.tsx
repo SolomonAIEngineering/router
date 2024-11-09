@@ -6,7 +6,7 @@ import { HelpForm } from "./help-form";
 const pageData = {
   name: "Support",
   title: "Support",
-  description: "Get help with Router.so",
+  description: "Get help with Trident",
 };
 
 export default async function Page() {

@@ -28,7 +28,7 @@ export const getEndpoints = authenticatedAction.action(
       .orderBy(desc(endpoints.updatedAt));
 
     return data;
-  }
+  },
 );
 
 /**
@@ -155,7 +155,7 @@ export const updateEndpoint = authenticatedAction
         updatedAt: new Date(),
       })
       .where(
-        and(eq(endpoints.id, parsedInput.id), eq(endpoints.userId, userId))
+        and(eq(endpoints.id, parsedInput.id), eq(endpoints.userId, userId)),
       );
 
     revalidatePath("/endpoints");

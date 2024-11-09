@@ -1,3 +1,6 @@
+import EditForm from "@/components/groups/endpoints/edit-form";
+import { Header } from "@/components/parts/header";
+import { PageWrapper } from "@/components/parts/page-wrapper";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,13 +9,10 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Header } from "@/components/parts/header";
-import EditForm from "@/components/groups/endpoints/edit-form";
-import { Home } from "lucide-react";
-import { PageWrapper } from "@/components/parts/page-wrapper";
-import Image from "next/image";
-import Icon from "@/public/icon.svg";
 import { getEndpointById } from "@/lib/data/endpoints";
+import Icon from "@/public/icon.svg";
+import { Home } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -59,7 +59,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           src={Icon}
           width={24}
           height={24}
-          alt="Router.so Icon"
+          alt="Trident Icon"
         />
       </Breadcrumb>
       <PageWrapper>

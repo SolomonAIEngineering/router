@@ -5,7 +5,7 @@
  * @returns A record object with key-value pairs representing the parameters.
  */
 export const constructBodyFromURLParameters = (
-  searchParams: URLSearchParams
+  searchParams: URLSearchParams,
 ): Record<string, string> => {
   const data: Record<string, string> = {};
   for (const [key, value] of searchParams) {

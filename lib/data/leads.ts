@@ -19,7 +19,7 @@ export async function createLead(
   endpointId: string,
   data: {
     [x: string]: any;
-  }
+  },
 ): Promise<string> {
   const [{ leadId }] = await db
     .insert(leads)
@@ -59,7 +59,7 @@ export const getLeads = authenticatedAction.action(
     }));
 
     return data;
-  }
+  },
 );
 
 /**

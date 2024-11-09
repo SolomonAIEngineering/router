@@ -1,6 +1,6 @@
+import { auth } from "@/lib/auth";
 import Image from "next/image";
 import Link from "next/link";
-import { auth } from "@/lib/auth";
 
 import MagicLinkForm from "@/components/auth/form";
 import { redirect } from "next/navigation";
@@ -18,7 +18,7 @@ export default async function LoginPage() {
           width={50}
           height={72}
         ></Image>
-        <p className="text-center text-xl">Welcome to router.so</p>
+        <p className="text-center text-xl">Welcome to Trident</p>
         <p className="text-center text-muted-foreground">
           Login to access your account.
         </p>
@@ -27,12 +27,18 @@ export default async function LoginPage() {
         </div>
       </div>
       <p className="mt-4 max-w-xs text-center text-sm text-muted-foreground md:mb-24">
-        By using router.so, you agree to our{" "}
-        <Link className="underline underline-offset-4" href="/">
+        By using Trident, you agree to our{" "}
+        <Link
+          className="underline underline-offset-4"
+          href="https://solomon-ai.app/privacy"
+        >
           Privacy Policy
         </Link>{" "}
         and{" "}
-        <Link className="underline underline-offset-4" href="/">
+        <Link
+          className="underline underline-offset-4"
+          href="https://solomon-ai.app/terms"
+        >
           Terms of Service
         </Link>
         .
